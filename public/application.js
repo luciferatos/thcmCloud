@@ -1,6 +1,6 @@
 var mainApplicationModuleName = 'THCM';
 
-var mainApplicationModule = angular.module(mainApplicationModuleName, ['ngResource', 'ngRoute', 'empreendimentos']);
+var mainApplicationModule = angular.module(mainApplicationModuleName, ['ngResource', 'ngRoute', 'empreendimentos', 'components']);
 
 mainApplicationModule.config(['$locationProvider',
 function($locationProvider) {
