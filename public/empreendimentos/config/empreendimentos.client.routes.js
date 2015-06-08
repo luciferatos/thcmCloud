@@ -7,6 +7,9 @@ angular.module('empreendimentos').config(['$routeProvider',
     .when('/hello', {
       templateUrl: 'empreendimentos/views/empreendimentos.client.view.html'
     })
+    .when('/empreendimentos', {
+      templateUrl: 'empreendimentos/views/empreendimentos.client.view.html'
+    })
     .otherwise({
       redirectTo: '/'
     });
