@@ -31,6 +31,7 @@ app.post('/hello', function(req, res) {
 
 //require('routes/index.server.routes.js')(app);
 require('cloud/routes/index.server.routes.js')(app);
+require('cloud/routes/empreendimentos.server.routes.js')(app);
 
 app.get('/*', function(req, res) {
     res.sendfile('/index.html');
