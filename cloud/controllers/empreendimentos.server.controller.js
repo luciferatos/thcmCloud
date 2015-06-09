@@ -1,3 +1,4 @@
+/* @flow */
 var Empreendimento = Parse.Object.extend("Empreendimentos");
 
 exports.list = function(req, res){

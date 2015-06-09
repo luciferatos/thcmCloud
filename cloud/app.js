@@ -34,8 +34,8 @@ require('cloud/routes/index.server.routes.js')(app);
 require('cloud/routes/empreendimentos.server.routes.js')(app);
 
 app.get('/*', function(req, res) {
-    res.sendfile('/index.html');
-  });
+  res.sendfile('/index.html');
+});
 
 // // Example reading from the request query string of an HTTP get request.
 // app.get('/test', function(req, res) {
