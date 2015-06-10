@@ -1,4 +1,4 @@
-angular.module('empreendimentos').controller('EmpreendimentosController', ['$scope', '$timeout',
+angular.module('empreendimentos').controller('EmpreendimentosController', ['$scope', '$timeout', 'Empreendimentos'
   function($scope, $timeout) {
 
     $scope.thcmData = new Firebase("https://scorching-inferno-3334.firebaseio.com/Testes");
@@ -15,6 +15,8 @@ angular.module('empreendimentos').controller('EmpreendimentosController', ['$sco
       $scope.testeThcm = "";
       $scope.numQualquer = 0;
     };
+
+    $scope.
 
     $scope.thcmData.on('value', function(snapshot){
       $timeout(function(){
