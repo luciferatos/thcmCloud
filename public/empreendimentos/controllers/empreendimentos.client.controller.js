@@ -1,5 +1,5 @@
-angular.module('empreendimentos').controller('EmpreendimentosController', ['$scope', '$timeout', 'Empreendimentos'
-  function($scope, $timeout) {
+angular.module('empreendimentos').controller('EmpreendimentosController', ['$scope', '$timeout', 'Empreendimentos',
+  function($scope, $timeout, Empreendimentos) {
 
     $scope.thcmData = new Firebase("https://scorching-inferno-3334.firebaseio.com/Testes");
 
@@ -16,7 +16,11 @@ angular.module('empreendimentos').controller('EmpreendimentosController', ['$sco
       $scope.numQualquer = 0;
     };
 
-    $scope.
+    //CRUD começa aqui embaixo
+    $scope.listar = function(){
+      $scope.empreendimentos = Empreendimentos.query();
+      console.log($scope.empreendimentos);
+    };
 
     $scope.thcmData.on('value', function(snapshot){
       $timeout(function(){
