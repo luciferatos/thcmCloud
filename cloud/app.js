@@ -19,7 +19,7 @@ require('cloud/routes/index.server.routes.js')(app);
 require('cloud/routes/empreendimentos.server.routes.js')(app);
 
 // All undefined asset or api routes should return a 404
-app.get('/:url(api|auth|components|app|bower_components|assets)/*', errors[404]);
+//app.get('/:url(api|auth|components|app|bower_components|assets)/*', errors[404]);
 
 // All other routes should redirect to the index.html
 /*app.get('/*', function(req, res) {
